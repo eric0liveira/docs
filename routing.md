@@ -1,6 +1,6 @@
 # HTTP Routing
 
-- [Basic Routing](#basic-routing)
+- [Roteamento Básico](#basic-routing)
 - [Route Parameters](#route-parameters)
     - [Required Parameters](#required-parameters)
     - [Optional Parameters](#parameters-optional-parameters)
@@ -21,9 +21,9 @@
 - [Throwing 404 Errors](#throwing-404-errors)
 
 <a name="basic-routing"></a>
-## Basic Routing
+## Roteamento Básico
 
-You will define most of the routes for your application in the `app/Http/routes.php` file, which is loaded by the `App\Providers\RouteServiceProvider` class. The most basic Laravel routes simply accept a URI and a `Closure`:
+Você definirá a maioria das rotas para a sua aplicação no arquivo `app/Http/routes.php`, que é carregado pela classe `App\Providers\RouteServiceProvider`. As rotas mais básicas do Laravel simplismente aceitam um URI e um `Closure`:
 
     Route::get('/', function () {
         return 'Hello World';
